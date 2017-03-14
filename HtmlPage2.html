@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+</head>
+<body>
+
+<h1>CS Jou (092012)</h1>
+
+
+<div id="demo">
+
+
+
+<script>
+    var stringout = "";
+    stringout = "<table border='1'>";
+    var i = 1;
+    var j = 1;
+    for (i = 1; i <= 9; i++) {
+        stringout += "<tr>";
+        for (j = 1; j <= 9; j++)
+        {
+            stringout += "<td>" + i.toString() + "x" + j.toString() + "=" + (i * j).toString() + "</td>";
+        }
+        stringout += "</tr>";
+    }
+    stringout += "</table>";
+    document.write(stringout);
+</script>
+</div>
+
+</body>
+</html>
